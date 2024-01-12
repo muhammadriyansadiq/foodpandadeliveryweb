@@ -32,7 +32,7 @@ querySnapshot.forEach((doc) => {
 <td>${doc.data().destination[2]}</td>
 <td>${doc.data().status}</td>
 <td>
-<button type="button" class="btn btn-primary ${doc.data().orderanduserdetailsid}" data-bs-toggle="modal" data-bs-target="#exampleModal">
+<button type="button" class="btn btn-primary ${doc.data().orderanduserdetailsid} ordersbtn" data-bs-toggle="modal" data-bs-target="#exampleModal">
   View details
 </button>
 </td>
