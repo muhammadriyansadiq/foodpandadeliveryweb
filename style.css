@@ -377,10 +377,10 @@ align-items: center;
 }
 
 .mbbox{
-    color: white;
+    color: white !important;
 }
 .rox{
-    color: white;
+    color: white !important;
 }
 
 /* =================dishes.html==================== */
