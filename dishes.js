@@ -40,7 +40,7 @@ console.log(dishesadd);
   insertdishesdata.innerHTML += 
   `<div class="col-7">
   <div class="card w-100 mb-3">
-      <div class="card-body">
+      <div class="card-body rowstyling">
         <div class="d-flex align-items-center justify-content-between">
           <div class="d-flex align-items-center justify-content-between">
               <img width="150" src="${doc.data().dishimage}" alt="">
@@ -83,7 +83,7 @@ let getallldishes = async () => {
 if(doc.data().id ===storedValue ){
     console.log("dishes data",doc.data().id, " => ", doc.data());
     row.innerHTML += ` <div class="col-12">
-    <div class="card w-100 mb-3">
+    <div class="card w-100 mb-3 rowstyling">
       <div class="d-flex justify-content-center align-items-center">
 
         <div class="card-body">

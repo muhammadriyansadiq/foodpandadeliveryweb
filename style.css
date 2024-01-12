@@ -81,7 +81,7 @@ table tr{
     color: white;
 }
 .socialmediaicons{
-    color: #ff2806;
+    color: #ffffff;
 }
 .box{
     width: 100%;
@@ -374,4 +374,20 @@ align-items: center;
     background-attachment: fixed;
     color: #ffffff; */
     font-weight: bolder;
+}
+
+.mbbox{
+    color: white;
+}
+.rox{
+    color: white;
+}
+
+/* =================dishes.html==================== */
+.rowstyling{
+    /* background: none; */
+    /* background-image: url("https://image.lexica.art/full_webp/33f4e971-267f-4d63-8658-c42bcae664fc"); */
+    /* background-color: #b4e4a8; */
+    background-color: rgb(117, 83, 41);
+
 }
