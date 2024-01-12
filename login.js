@@ -14,12 +14,17 @@ const login = (e)=>{
     let email = document.querySelector("#email")
     let password = document.querySelector("#password")
 console.log(email.value,password.value);
+
 signInWithEmailAndPassword(auth, email.value, password.value)
   .then((userCredential) => {
     // Signed in horaha hai
     const user = userCredential.user;
     if(user.email === "admin@gmail.com"){
         location.href = "dashboard.html"
+    }
+    else{
+      location.href = "home.html"
+
     }
 console.log(user);
 })

@@ -1,11 +1,26 @@
+body{
+    background-image: url("https://image.lexica.art/full_webp/33f4e971-267f-4d63-8658-c42bcae664fc");
+    /* object-fit: cover;
+    object-position: center; */
+    background-position: top right;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
 .navbar{
-    background-color: white;
-    box-shadow:  0 2px 6px 0 rgba(0,0,0,.12), inset 0 -1px 0 0 #dadce0;;
+    background-color: rgb(251, 249, 249);
+    box-shadow:  0 2px 6px 0 rgba(0,0,0,.12), inset 0 -1px 0 0 #dadce0;
+    /* background-color: white; */
+}
+.anchorlink{
+    color: red !important;
+    font-weight: bolder;
 }
 .registerbtn{
     border: 2px solid #07ff07;
     color: #ff2806;
     font-weight: bolder;
+    cursor: pointer;
 }
 .registerbtn:hover{
     background-color: #07ff07;
@@ -76,27 +91,110 @@ table tr{
 }
 
 .restaurants{
-    border: 1px solid rgb(207, 194, 194);
+    border: 6px solid rgb(41, 182, 9);
     width: 28%;
     margin: 12px;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+}
+.restaurants:hover{
+    background-color: #07ff07;
+    cursor: pointer;
 }
 
+.restaurants p{
+    color: red;
+    font-weight: bolder;
+    font-size: 29px;
+}
+.restaurants h5{
+    color: red;
+    font-size: 29px;
+    font-weight: bolder;
+}
+
+
 .dishes{
-    border: 1px solid rgb(207, 194, 194);
+    border: 6px solid rgb(41, 182, 9);
     width: 28%;
     margin: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.dishes:hover{
+    background-color: #07ff07;
+    cursor: pointer;
+}
+
+
+
+.dishes p{
+    color: red;
+    font-weight: bolder;
+    font-size: 29px;
+}
+.dishes h5{
+    color: red;
+    font-size: 29px;
+    font-weight: bolder;
 }
 
 .orders{
-    border: 1px solid rgb(207, 194, 194);
+    border: 6px solid rgb(41, 182, 9);
     width: 28%;
     margin: 12px;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
 }
 
+.orders:hover{
+    background-color: #07ff07;
+    cursor: pointer;
+}
+.orders p{
+    color: red;
+    font-weight: bolder;
+    font-size: 29px;
+}
+.orders h5{
+    color: red;
+    font-size: 29px;
+    font-weight: bolder;
+}
+
+
+
 .users{
-    border: 1px solid rgb(207, 194, 194);
+    border: 6px solid rgb(41, 182, 9);
     width: 28%;
     margin: 12px;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+}
+
+.users:hover{
+    background-color: #07ff07;
+    cursor: pointer;
+}
+
+.users p{
+    color: red;
+    font-weight: bolder;
+    font-size: 29px;
+}
+.users h5{
+    color: red;
+    font-size: 29px;
+    font-weight: bolder;
 }
 
 .indeximg{
@@ -191,4 +289,89 @@ align-items: center;
 
 .thead tr{
     width: 100% !important;
+}
+
+/* ===========adddishes styling============ */
+.tableadddishes{
+    /* opacity: 0.8; */
+    /* background-color: #ff2806; */
+    background: transparent;
+    border: none;
+}
+.tableadddishes tr{
+    border: none;
+}
+
+.tableadddishes th{
+    /* color: rgb(39, 238, 25); */
+    /* background-color: rgb(155, 151, 151); */
+    font-weight: bolder;
+    font-size: 27px;
+  color: #ffffff;
+  font-family: sans-serif;
+  
+}
+
+.tableadddishes td{
+    color: #ffffff;
+        font-weight: bolder;
+    font-size: 23px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.dishtext{
+    color: #d00505;
+    font-size: 28px;
+}
+
+/* ========================restaurants================ */
+
+.restauranttext{
+    color: #f40505;
+    font-size: 28px !important;
+}
+
+#tablerestaurants tr th{
+    background: transparent;
+    color: #ffffff;
+    /* background-color: #08a808; */
+    border: none;
+    font-size: 24px;
+}
+#tablerestaurants tr td{
+    background: transparent;
+    color: #ffffff;
+    border: none;
+    font-size: 24px;
+}
+
+#tablerestaurants tr{
+    /* background: transparent;
+    background-color: #08a808; */
+    border: none;
+}
+
+
+/* ====================ordersstylepages============= */
+.tableorders tr{
+    border: none;
+}
+
+.tableorders tr th{
+    color: #ffffff;
+    font-size: 26px;
+}
+
+.tableorders tr td{
+    color: #fdfdfd;
+    font-size: 21px;
+}
+
+
+/* =============modal-content================ */
+.modal-content{
+    /* background-image: url("https://image.lexica.art/full_webp/33f4e971-267f-4d63-8658-c42bcae664fc");
+    background-position: bottom right;
+    background-attachment: fixed;
+    color: #ffffff; */
+    font-weight: bolder;
 }

@@ -1,6 +1,7 @@
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-import { getAuth } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+import { getAuth,createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+
 import {  getStorage, ref ,uploadBytesResumable, getDownloadURL } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-storage.js";
 import { getFirestore, addDoc ,collection, query, where, getDocs } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 const firebaseConfig = {
@@ -15,51 +16,29 @@ const firebaseConfig = {
   const auth = getAuth(app);
   const storage = getStorage();
   const db = getFirestore(app);
-let row = document.querySelector(".row")
-let spinnerborders = document.querySelector(".spinnerborders")
-let getalllrestaurants = async()=>{
-    row.innerHTML = ""
-    spinnerborders.style.display = "block"
-    const q = (collection(db, "restaurants"));
-const querySnapshot = await getDocs(q);
+let exampleInputEmail1 = document.getElementById("exampleInputEmail1")
 
-// let restaurantlists = document.querySelector("#restaurant-list")
-
-querySnapshot.forEach((doc) => {  
-// count += 1
-  console.log(doc.id, " => ", doc.data());
-  row.innerHTML  += 
-  ` <div id="${doc.data().id}" class="col">
-  <div class="card" style="width: 18rem;">
-      <img class="indeximg" src="${doc.data().img}" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">${doc.data().name}</h5>
-        <p class="card-text">All varities available</p>
-        <p><span class="badge text-bg-warning">Biryani</span>
-          <span class="badge text-bg-warning">karhai</span>
-          <span class="badge text-bg-warning">Tikkah</span>
-      </p>
-        <a href="/dishes.html" class="gosomewherebtn">View All Items</a>
-      </div>
-    </div>
-</div>`
-});
-spinnerborders.style.display = "none"
-}
-getalllrestaurants()
+let exampleInputPassword1 = document.getElementById("exampleInputPassword1")
+let register = document.getElementById("register")
 
 
-// =================index k page par woo data show horaha hai jo restaurants ka hai jo k database mai save hai view all items k click karnnai par dishes k page par move karjayega page aur dishes ka page os restaurants ki all dishes dikhayega==============
 
-
-// let row = document.querySelector(".row")
-// =========view all tn k click par page move karna hai aur restaurant id get ki os sai dishes wali page mai data fetch kiya ============
-
-row.addEventListener("click",(e)=>{
-e.preventDefault()
-let togettargetedid = e.target.parentNode.parentNode.parentNode.id
-localStorage.setItem('restaurantid', togettargetedid);
-console.log(togettargetedid);
-location.href = "dishes.html"
+if(register){
+register.addEventListener("click",function(){
+  console.log("signup");
+createUserWithEmailAndPassword(auth, exampleInputEmail1.value, exampleInputPassword1.value)
+  .then((userCredential) => {
+    // Signed up 
+    const user = userCredential.user;
+    location.href = "login.html"
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // ..
+    console.log("errorcode",errorCode);
+    console.log("errmsg",errorMessage);
+  }); 
 })
-
+}
