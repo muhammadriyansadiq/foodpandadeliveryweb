@@ -389,7 +389,7 @@ table tr {
 }
 
 .navdishes {
-  width: 102%;
+  width: 102% !important;
 }
 
 .ordersbtn {
