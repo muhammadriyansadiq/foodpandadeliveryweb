@@ -1,0 +1,194 @@
+.navbar{
+    background-color: white;
+    box-shadow:  0 2px 6px 0 rgba(0,0,0,.12), inset 0 -1px 0 0 #dadce0;;
+}
+.registerbtn{
+    border: 2px solid #07ff07;
+    color: #ff2806;
+    font-weight: bolder;
+}
+.registerbtn:hover{
+    background-color: #07ff07;
+    opacity: 0.9;
+}
+.loginbtn{
+    /* outline: #07ff07; */
+    border: 2px solid #fbe40a;
+    color: #08a808;
+    font-weight: bolder;
+}
+.loginbtn:hover{
+    background-color: #fbe40a;
+    opacity: 0.9;
+}
+.gosomewherebtn{
+    background-color: #ff2806;
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    font-weight: bold;
+}
+.btn{
+    background-color: #ff2806;
+color: rgb(250, 247, 247);
+font-weight: 500;
+margin: 0px 3px;
+}
+
+.btnqty{
+    background-color: #ff2806;
+    color: black;
+    font-weight: 500;
+    margin: 0px 3px;
+    border-radius: 50%;
+}
+
+.card i{
+    font-size: 28px;
+}
+.navbar-brand span{
+margin-left: 7px;
+}
+.dishesandbtn{
+    margin: 6px 0px;
+}
+table{
+    width: 100%;
+    /* border: 1px solid; */
+}
+table tr{
+    /* width: 100%; */
+    border-bottom: 1px solid rgb(222, 208, 208);
+    line-height: 40px;
+}
+
+.deleteicon{
+    color: white;
+}
+.socialmediaicons{
+    color: #ff2806;
+}
+.box{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.restaurants{
+    border: 1px solid rgb(207, 194, 194);
+    width: 28%;
+    margin: 12px;
+}
+
+.dishes{
+    border: 1px solid rgb(207, 194, 194);
+    width: 28%;
+    margin: 12px;
+}
+
+.orders{
+    border: 1px solid rgb(207, 194, 194);
+    width: 28%;
+    margin: 12px;
+}
+
+.users{
+    border: 1px solid rgb(207, 194, 194);
+    width: 28%;
+    margin: 12px;
+}
+
+.indeximg{
+    height: 160px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+/* =========restaurant================== */
+#selected-logo{
+    display: none;
+}
+
+.spinnerborder{
+    height: 20px;
+    width: 20px;
+    display: none;
+}
+.spinnerborders{
+    height: 50px;
+    width: 50px;
+    display: none;
+}
+
+.restaurant-logo-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+/* ===============adddishes================ */
+.dishspinner{
+    height: 25px;
+    width: 25px;
+    display: none;
+}
+.dishimg{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+
+/* ===================dishes================= */
+.dishesspinner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.spinnerdishes{
+    height: 170px;
+    width: 170px;
+    display: none;
+}
+.dishcarts{
+    display: none;
+}
+.qtyofitems{
+    background-color: black;
+    height: 40px;
+    width: 40px;
+border-radius: 50%;
+transform: translate(-53px, 0px);
+color: white;
+font-weight: bolder;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#addtocartspinner{
+    height: 70px;
+    width: 70px;
+    display: none;
+}
+
+
+/* =======orders============= */
+.spinnerorders{
+    height: 170px;
+    width: 170px;
+    display: none;
+}
+
+
+
+.thead{
+    width: 100% !important;
+}
+
+.thead tr{
+    width: 100% !important;
+}
